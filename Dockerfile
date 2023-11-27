@@ -1,5 +1,8 @@
 # Use a base image with Java, Maven, and set the working directory
-FROM maven:3.8.4-openjdk-17 AS builder
+#FROM maven:3.8.4-openjdk-17 AS builder
+FROM openjdk:17-jdk-alpine
+# Your Dockerfile commands here
+
 WORKDIR /app
 
 # Copy the project's pom.xml and other necessary files
