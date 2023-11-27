@@ -1,7 +1,10 @@
 # Use a base image with Java, Maven, and set the working directory
 #FROM maven:3.8.4-openjdk-17 AS builder
-FROM openjdk:17-jdk-alpine
+#FROM openjdk:17-jdk-alpine
 # Your Dockerfile commands here
+FROM amazoncorretto:17-alpine
+# Your Dockerfile commands here
+
 
 WORKDIR /app
 
